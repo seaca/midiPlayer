@@ -62,7 +62,7 @@ int main(void){
 	}
 
 	// print tracks to debug
-	for (int i = 1; i < midiHeader.tracks; i++){
+	for (int i = 0; i < midiHeader.tracks; i++){
 		fprintf(fout, "------Track %d--------------\n", i);
 		PrintTrackData(fout, &midiTrack[i]);
 	}
